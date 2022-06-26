@@ -1,7 +1,12 @@
 from pyrogram import Client
 
 # Create a new Client
-app = Client("my_account")
+app = Client(
+    "EpicBots",
+    api_id = int(os.environ["API_ID"]),
+    api_hash = os.environ["API_HASH"],
+    bot_token = os.environ["BOT_TOKEN"]
+)
 
 
 async def main():
