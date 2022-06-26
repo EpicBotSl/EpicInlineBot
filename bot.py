@@ -1,4 +1,5 @@
 from pyrogram import Client
+import os
 
 # Create a new Client
 app = Client(
